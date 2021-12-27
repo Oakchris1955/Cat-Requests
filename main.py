@@ -1,5 +1,8 @@
+#import tkinter
 import tkinter as tk
-import requests
+
+#import other libs
+import requests, keyboard
 
 # pip install pillow
 from PIL import Image, ImageTk
@@ -14,7 +17,7 @@ def render(status):
 	img['image'] = render
 	img.image = render
 	img.pack(side='top', fill='both', expand='yes')
-	print('Rendered!!!')
+	print('Succesfully rendered the image')
 
 def get_status():
 	try:
@@ -33,7 +36,7 @@ greeting = tk.Label(text="Please enter the address you wanna ping here")
 entry = tk.Entry(width=50)
 request_button = tk.Button(text='Send request', command=get_status)
 debug_response = tk.Label(text='Debug output:')
-debug_output = tk.Text(width=100, height=20, state=tk.DISABLED)
+debug_output = tk.Text(width=100, height=15, state=tk.DISABLED)
 
 #pack the variables
 img.pack()
@@ -42,6 +45,9 @@ entry.pack()
 request_button.pack()
 debug_response.pack()
 debug_output.pack()
+
+#render the image when the "Enter" button is pressed
+keyboard.on_press_key("Enter", lambda _:get_status())
 
 #show the window
 window.mainloop()
