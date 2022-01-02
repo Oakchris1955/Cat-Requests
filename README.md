@@ -10,6 +10,7 @@ Run `main.pyw` and a window should open up. On the input box enter the URL you w
 ### What is "Debug Output" ? ###
 Under Debug Output, errors will appear (Invalid schema, timeout error, etc.)
 
+### Picture example ###
 ![picture alt](https://raw.githubusercontent.com/Oakchris1955/Cat-Requests/main/example.com%20200.png)
 
 An example of the program when a 200 OK HTTP code is received.
