@@ -11,4 +11,5 @@ Run `main.pyw` and a window should open up. On the input box enter the URL you w
 Under Debug Output, errors will appear (Invalid schema, timeout error, etc.)
 
 ![picture alt](https://raw.githubusercontent.com/Oakchris1955/Cat-Requests/main/example.com%20200.png)
+
 An example of the program when a 200 OK HTTP code is received.
