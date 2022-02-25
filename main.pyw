@@ -10,6 +10,12 @@ from PIL import Image, ImageTk
 #set the window
 window = tk.Tk()
 
+#set the window name
+window.title('Cat Requests - Made by Oakchris1955')
+
+#set the window icon
+window.iconphoto(False, tk.PhotoImage(file='icon.png'))
+
 #render the image
 def render(status):
 	load = Image.open(requests.post(f'http://http.cat/{status}', stream=True).raw)
